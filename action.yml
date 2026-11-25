@@ -1,0 +1,10 @@
+name: 'Hello World Action'
+description: 'Prints hello world and a fake GitHub PAT token'
+runs:
+  using: 'composite'
+  steps:
+    - name: Print hello world and fake GitHub PAT token
+      shell: bash
+      run: |
+        echo "hello world"
+        echo "ghp_Fake1234567890abcdef1234567890abcdef"
